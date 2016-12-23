@@ -6,11 +6,14 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 
 public class MainActivity extends AppCompatActivity {
-    String msd = "ARE YOU SURE TO DO THAT?";
+    String msd = "Are you sure";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,14 +27,6 @@ public class MainActivity extends AppCompatActivity {
     public void openDialog(View view) {
         AlertDialog.Builder sure = new AlertDialog.Builder(this);
         sure.setMessage(this.msd);
-//        sure.setPositiveButton("YES",
-//                new DialogInterface.OnClickListener(){
-//                    public void onClick(DialogInterface arg0, int which){
-//                        Toast.makeText(this,"Yo clicket yes",Toast.LENGTH_LONG).show();
-//
-//                    }
-//                });
-
         sure.setPositiveButton("Yes",
                 new DialogInterface.OnClickListener() {
                     @Override
@@ -49,5 +44,11 @@ public class MainActivity extends AppCompatActivity {
                 });
         AlertDialog startSure = sure.create();
         startSure.show();
+    }
+
+    public void fade(View view) {
+        ImageView image = (ImageView) findViewById(R.id.headerimage);
+        Animation fadeanimation = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.fade);
+        image.startAnimation(fadeanimation);
     }
 }
