@@ -10,18 +10,39 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.design.design.design.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!" />
-
     <Button
+        android:id="@+id/start"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="100dp"
         android:background="@color/colorPrimaryDark"
-        android:textColor="@color/colorWhite"
-        android:text="@string/btn_start"
         android:onClick="startLogin"
+        android:text="@string/btn_start"
+        android:textColor="@color/colorWhite"
         />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorDanger"
+        android:onClick="openDialog"
+        android:text="Closse"
+        android:textColor="@color/colorWhite" />
+
+    <ImageView
+        android:id="@+id/headerimage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/start"
+        android:src="@drawable/microphone" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/headerimage"
+        android:background="@color/colorBlack"
+        android:onClick="fade"
+        android:text="Fade img"
+        android:textColor="@color/colorWhite" />
+
 </RelativeLayout>
