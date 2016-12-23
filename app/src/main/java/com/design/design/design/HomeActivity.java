@@ -16,12 +16,12 @@ public class HomeActivity extends AppCompatActivity  {
         setContentView(R.layout.activity_home);
         String accessToken = "OUNXAEDF6TDQAGG7US5QF76SCCI3XW5L";
         String text = "What is weather in Paris?";
-        String TAG ="Wit Reaposnse";
+
         HttpHandler sh = new HttpHandler();
         // Making a request to url and getting response
-        String url = "https://api.wit.ai/message?q="+text+"& access_token="+accessToken;
+        String url = "https://api.wit.ai/message?q="+text+"&access_token="+accessToken;
         String jsonStr = sh.makeServiceCall(url);
-        Log.e(TAG, "Response from url: " + jsonStr);
+        Log.e("WIT", "Response from url: " + jsonStr);
     }
 
 
