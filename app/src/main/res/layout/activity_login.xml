@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.design.design.design.LoginActivity">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="100dp"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="@string/text_header_login"></View>
+
+        <EditText
+            android:id="@+id/ins_email"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorShade"
+            android:layout_marginTop="10dp"
+            android:text="@string/insert_email"/>
+
+        <EditText
+            android:id="@+id/ins_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/insert_password"
+            android:textColor="@color/colorShade"
+            android:layout_below="@+id/ins_email"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="11dp"
+            android:drawableBottom="@color/colorFresh"
+            android:layout_marginEnd="11dp" />
+        <Button
+            android:id="@+id/init_login"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold"
+            android:onClick="initLogin"
+            android:text="@string/btn_login"
+            android:background="@color/colorSuccess"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="120dp"/>
+        <Button
+            android:id="@+id/init_login"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold"
+            android:onClick="startRegister"
+            android:text="@string/btn_register"
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="180dp"/>
+</RelativeLayout>

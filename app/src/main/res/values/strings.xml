@@ -1,3 +1,23 @@
 <resources>
+
     <string name="app_name">Design</string>
+    <string name="action_settings">Settings</string>
+    <!--Strings universal-->
+    <string name="save">Save</string>
+    <!--Main Activity-->
+    <string name="btn_start">Start</string>
+    <!--Login activity-->
+    <string name="text_header_login">Login to design</string>
+    <string name="insert_email">admin</string>
+    <string name="insert_password">admin</string>
+    <string name="btn_login">Login</string>
+    <string name="btn_register">Register</string>
+    <!--Register activity-->
+    <string name="text_head_register">Register to Design Tutorial</string>
+    <string name="text_name">Name</string>
+    <string name="text_subname">Subname</string>
+    <string name="text_email">Email</string>
+    <string name="text_password">Password</string>
+
+
 </resources>
