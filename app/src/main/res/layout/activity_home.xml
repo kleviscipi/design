@@ -45,5 +45,21 @@
         android:text="The semantic results will show up here"
         android:textAppearance="?android:attr/textAppearanceMedium"
         />
+    <Button android:id="@+id/btn_wit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/jsonView"
+        android:layout_marginTop="50dp"
+        android:shadowColor="@color/colorWhite"
+        android:background="@color/colorBlack"
+        android:onClick="witStart"/>
+
+    <Button
+        android:id="@+id/charge"
+        android:text="Check Charge"
+        android:shadowColor="@color/colorWhite"
+        android:background="@color/colorPrimaryDark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 
 </RelativeLayout>

@@ -25,14 +25,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="@color/colorShade"
-            android:text="@string/text_name"/>
+            android:hint="@string/text_name"/>
 
         <EditText
             android:id="@+id/reg_subname"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="@color/colorShade"
-            android:text="@string/text_subname"
+            android:hint="@string/text_subname"
             android:layout_below="@+id/reg_name"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true" />
@@ -41,7 +41,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="@color/colorShade"
-            android:text="@string/text_email"
+            android:hint="@string/text_email"
             android:layout_below="@+id/reg_subname"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true" />
@@ -50,7 +50,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="@color/colorShade"
-            android:text="@string/text_password"
+            android:hint="@string/text_password"
+            android:password="true"
             android:layout_below="@+id/reg_email"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true" />

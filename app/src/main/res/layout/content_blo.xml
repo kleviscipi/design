@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_blo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.design.design.design.BloActivity"
+    tools:showIn="@layout/activity_blo">
+    <Button
+        android:id="@+id/onblo"
+        android:layout_width="wrap_content"
+        android:text="On"
+        android:textColor="@color/colorWhite"
+        android:background="@color/colorInfo"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/offblo"
+        android:layout_width="wrap_content"
+        android:text="Off"
+        android:textColor="@color/colorWhite"
+        android:background="@color/colorInfo"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/onblo"
+        android:layout_toEndOf="@+id/onblo"
+        android:layout_marginLeft="18dp"
+        android:layout_marginStart="18dp" />
+
+    <Button
+        android:id="@+id/devices"
+        android:layout_width="wrap_content"
+        android:text="Devices List"
+        android:textColor="@color/colorWhite"
+        android:background="@color/colorInfo"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="26dp"
+        android:layout_marginStart="26dp"
+        android:layout_alignParentTop="true"
+        android:padding="10dp"
+        android:layout_toRightOf="@+id/offblo"
+        android:layout_toEndOf="@+id/offblo" />
+
+    <Button
+        android:id="@+id/visible"
+        android:layout_width="match_parent"
+        android:text="Visibles"
+        android:textColor="@color/colorWhite"
+        android:background="@color/colorInfo"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/onblo"
+        android:layout_marginTop="10dp" />
+</RelativeLayout>
