@@ -3,6 +3,7 @@ package com.design.design.design;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.graphics.Camera;
 import android.media.Image;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -17,7 +18,8 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     String msd = "Are you sure";
-    Button bluetooth;
+    Button bluetooth,gotoplanets,gotocamera,gotofacebook,fire;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,8 +27,11 @@ public class MainActivity extends AppCompatActivity {
         ImageView slide = (ImageView) findViewById(R.id.headerimage2);
         Animation slideanimation = AnimationUtils.loadAnimation(getApplicationContext(),R.anim.slide);
         slide.startAnimation(slideanimation);
-
+        myfragment();
         startBluetooth();
+        startCamera();
+        startFacebook();
+        startFirebase();
     }
     public void startLogin(View view){
         Intent thislogin = new Intent(this,LoginActivity.class);
@@ -72,6 +77,46 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent blo = new Intent(getBaseContext(),BloActivity.class);
                 startActivity(blo);
+            }
+        });
+    }
+    public void myfragment(){
+        gotoplanets = (Button) findViewById(R.id.gotoplanets);
+        gotoplanets.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent frag = new Intent(getBaseContext(),Myfragment.class);
+                startActivity(frag);
+            }
+        });
+    }
+    protected void startCamera(){
+        gotocamera = (Button) findViewById(R.id.gotocamera);
+        gotocamera.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent camera  = new Intent(getBaseContext(), CameraActivity.class);
+                startActivity(camera);
+            }
+        });
+    }
+    protected void startFacebook(){
+        gotofacebook = (Button) findViewById(R.id.gotofacebook);
+        gotofacebook.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent facebook = new Intent(getBaseContext(),FacebookActivity.class);
+                startActivity(facebook);
+            }
+        });
+    }
+    protected void startFirebase(){
+        fire = (Button) findViewById(R.id.gotofirebase);
+        fire.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent firebase = new Intent(getBaseContext(),FirebaseActivity.class);
+                startActivity(firebase);
             }
         });
     }

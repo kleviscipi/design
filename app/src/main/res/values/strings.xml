@@ -19,6 +19,18 @@
     <string name="text_email">Email</string>
     <string name="text_password">Password</string>
     <string name="title_activity_blo">BloActivity</string>
-
-
+    <!--List array-->
+    <string-array name="Planets">
+        <item>Sun</item>
+        <item>Mercury</item>
+        <item>Venus</item>
+        <item>Earth</item>
+        <item>Mars</item>
+        <item>Jupiter</item>
+        <item>Saturn</item>
+        <item>Uran</item>
+        <item>Neptune</item>
+    </string-array>
+    <!--Facebbok sdk-->
+    <string name="facebook_app_id">136527293192863</string>
 </resources>
