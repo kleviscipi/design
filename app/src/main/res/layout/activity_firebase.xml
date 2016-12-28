@@ -9,5 +9,29 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.design.design.design.FirebaseActivity">
-
+    <TextView
+        android:textSize="35dp"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/firebaseText"
+        android:text="Firebase Profile"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/sendFirebase"
+        android:layout_below="@+id/firebaseText"
+        android:background="@color/cardview_dark_background"
+        android:textColor="@color/colorWhite"
+        android:text="Send"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/riceveFirebase"
+        android:text="Riceve"
+        android:textColor="@color/colorWhite"
+        android:background="@color/colorBlack"
+        android:layout_below="@+id/firebaseText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 </RelativeLayout>

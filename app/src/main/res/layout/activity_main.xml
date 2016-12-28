@@ -10,48 +10,6 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.design.design.design.MainActivity">
 
-    <ImageView
-        android:id="@+id/headerimage"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/start"
-        android:src="@drawable/microphone" />
-
-    <ImageView
-        android:id="@+id/headerimage1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/microphone"
-        android:layout_below="@+id/start"
-        android:layout_toRightOf="@+id/headerimage"
-        android:layout_toEndOf="@+id/headerimage"
-        android:layout_marginLeft="21dp"
-        android:layout_marginStart="21dp" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@color/colorBlack"
-        android:onClick="fade"
-        android:text="Fade img"
-        android:textColor="@color/colorWhite"
-        android:layout_below="@+id/headerimage"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="27dp"
-        android:id="@+id/button" />
-
-    <ImageView
-        android:id="@+id/headerimage2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/microphone"
-        android:layout_below="@+id/start"
-        android:layout_toRightOf="@+id/headerimage1"
-        android:layout_toEndOf="@+id/headerimage1"
-        android:layout_marginLeft="15dp"
-        android:layout_marginStart="15dp" />
-
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -77,17 +35,6 @@
         android:layout_alignParentEnd="true" />
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@color/colorBlack"
-        android:onClick="move"
-        android:text="Move img"
-        android:textColor="@color/colorWhite"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
-    <Button
         android:id="@+id/bluetooth"
         android:text="Bluetooth"
         android:layout_width="match_parent"
@@ -96,7 +43,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/button"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="45dp" />
+        android:layout_marginTop="60dp" />
 
     <Button
         android:id="@+id/gotoplanets"
@@ -104,19 +51,11 @@
         android:background="@color/colorPrimaryDark"
         android:layout_width="wrap_content"
         android:text="Planets"
-        android:layout_below="@id/bluetooth"
-        android:layout_height="wrap_content" />
-
-    <Button
-        android:id="@+id/gotocamera"
-        android:textColor="@color/colorWhite"
-        android:background="@color/colorSuccess"
-        android:layout_width="wrap_content"
-        android:text="Camera"
         android:layout_height="wrap_content"
         android:layout_below="@+id/bluetooth"
-        android:layout_alignRight="@+id/headerimage2"
-        android:layout_alignEnd="@+id/headerimage2" />
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="26dp" />
 
     <Button
         android:id="@+id/gotofacebook"
@@ -125,11 +64,9 @@
         android:layout_width="wrap_content"
         android:text="Facebook"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/bluetooth"
-        android:layout_toRightOf="@+id/button2"
-        android:layout_toEndOf="@+id/button2"
-        android:layout_marginLeft="14dp"
-        android:layout_marginStart="14dp" />
+        android:layout_alignBaseline="@+id/gotoplanets"
+        android:layout_alignBottom="@+id/gotoplanets"
+        android:layout_centerHorizontal="true" />
 
     <Button
         android:id="@+id/gotofirebase"
@@ -138,8 +75,57 @@
         android:layout_width="wrap_content"
         android:text="Firebase"
         android:layout_height="wrap_content"
-        android:layout_marginTop="35dp"
-        android:layout_below="@+id/gotoplanets"
+
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/gotofacebook"
+        android:layout_alignStart="@+id/gotofacebook" />
+
+    <Button
+        android:id="@+id/gotocamera"
+        android:textColor="@color/colorWhite"
+        android:background="@color/colorSuccess"
+        android:layout_width="wrap_content"
+        android:text="Camera"
+
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/gotofacebook"
+        android:layout_alignBottom="@+id/gotofacebook"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/gotoanimations"
+        android:textColor="@color/colorWhite"
+        android:background="@color/com_facebook_button_background_color"
+        android:layout_width="wrap_content"
+        android:text="Animation"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/gotofirebase"
+        android:layout_alignBottom="@+id/gotofirebase"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/gotonotifications"
+        android:textColor="@color/colorWhite"
+        android:background="@color/com_facebook_button_background_color"
+        android:layout_width="wrap_content"
+        android:text="Notices"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/gotofirebase"
+        android:layout_alignBottom="@+id/gotofirebase"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/gotopanel"
+        android:textColor="@color/colorWhite"
+        android:background="@color/cardview_dark_background"
+        android:layout_width="wrap_content"
+        android:text="Panel"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gotofirebase"
+        android:layout_alignLeft="@+id/gotofirebase"
+        android:layout_alignStart="@+id/gotofirebase"
+        android:layout_marginTop="44dp" />
 </RelativeLayout>

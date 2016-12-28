@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.design.design.design">
 
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
 
     <permission
@@ -11,6 +12,7 @@
 
     <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
     <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
 
     <application
         android:allowBackup="true"
@@ -46,11 +48,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".FirebaseActivity">
+        <activity android:name=".FirebaseActivity" />
+        <activity android:name=".AnimationActivity" />
 
-
-
-        </activity>
         <intent-filter>
             <action android:name="android.intent.action.VIEW" />
 
@@ -62,9 +62,25 @@
                 android:pathPrefix="/"
                 android:scheme="https" />
         </intent-filter>
+
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".NotificationsActivity"
+            android:label="@string/title_activity_notifications"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".OpenNotificationActivity" />
+        <activity
+            android:name=".PanelActivity"
+            android:label="@string/title_activity_panel"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".WifinetworkActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_wifinetwork"
+            android:theme="@style/FullscreenTheme"></activity>
     </application>
 
 </manifest>

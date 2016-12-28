@@ -11,4 +11,6 @@
     <color name="colorWarning">#d0d24f</color>
     <color name="colorFresh">#08f2bf</color>
     <color name="colorShade">#b4b1b1</color>
+
+    <color name="black_overlay">#66000000</color>
 </resources>

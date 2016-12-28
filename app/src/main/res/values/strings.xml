@@ -33,4 +33,20 @@
     </string-array>
     <!--Facebbok sdk-->
     <string name="facebook_app_id">136527293192863</string>
+    <string name="title_activity_notifications">NotificationsActivity</string>
+
+    <!--NOtifications-->
+    <string name="headernotice">Click on icon info for starting a notifications</string>
+    <string name="title_activity_panel">PanelActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="title_activity_wifi">Settings</string>
+
+    <string name="title_activity_wifinetwork">WifinetworkActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+    <!-- Strings related to Settings -->
+
 </resources>
