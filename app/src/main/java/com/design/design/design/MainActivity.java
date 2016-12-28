@@ -29,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
             fire,
             anime,
             notice,
+    google,
     panel;
 
     @Override
@@ -43,6 +44,7 @@ public class MainActivity extends AppCompatActivity {
         startAnimations();
         startNotifications();
         startPanel();
+        googlestart();
         FacebookSdk.sdkInitialize(getApplicationContext());
         AppEventsLogger.activateApp(this);
     }
@@ -151,6 +153,16 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent notices = new Intent(getBaseContext(), PanelActivity.class);
                 startActivity(notices);
+            }
+        });
+    }
+    protected void googlestart(){
+        google = (Button) findViewById(R.id.gotogoogle);
+        google.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent go = new Intent(getBaseContext(),WebActivity.class);
+                startActivity(go);
             }
         });
     }

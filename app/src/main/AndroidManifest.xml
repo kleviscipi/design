@@ -4,6 +4,8 @@
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
 
     <permission
         android:name="android.permission.BLUETOOTH"
@@ -78,9 +80,14 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".WifinetworkActivity"
-            android:configChanges="orientation|keyboardHidden|screenSize"
-            android:label="@string/title_activity_wifinetwork"
-            android:theme="@style/FullscreenTheme"></activity>
+            android:label="@string/title_activity_wifinetwork" />
+        <activity android:name=".WebActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
