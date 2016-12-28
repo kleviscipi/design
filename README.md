@@ -1,6 +1,6 @@
 # Design, your first app Android :)
 
-This ap is very simple.
+This app is very simple.
 Begginers on android studio can understand very weel this app.
 
 #Examples
